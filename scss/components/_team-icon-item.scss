@@ -1,14 +1,11 @@
 .team-icon-item {
   width: 44px;
   height: 44px;
-}
-
-.team-icon-item {
   margin-right: 10px;
-}
 
-.team-icon-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-icon-svg {

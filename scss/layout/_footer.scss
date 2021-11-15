@@ -12,16 +12,14 @@
   justify-content: center;
 }
 
-.footer {
-  background-color: #2f303a;
-}
-
 .footer-icon-svg {
   fill: #ffffff;
 }
 
 .footer {
   padding: 60px 0;
+
+  background-color: #2f303a;
 }
 
 .footer-adress {
@@ -50,6 +48,11 @@
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-title-color);
+  }
 }
 
 .footer-item-link {
@@ -78,29 +81,24 @@
   align-items: center;
   justify-content: center;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-icon-link:hover,
-.footer-icon-link:focus {
-  background: #2196f3;
-}
-
-.footer-icon-item:not(:last-child) {
-  margin-right: 10px;
+  &:hover,
+  &:focus {
+    background: #2196f3;
+  }
 }
 
 .footer-icon-item {
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .address-footer {
   margin-right: 70px;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  color: var(--primary-title-color);
 }
 
 /* Подписатся футер */
@@ -138,11 +136,11 @@
 
   background: #2f303a;
   outline: none;
-}
 
-.modal-form-mail:focus {
-  outline: none;
-  border-color: var(--header-color);
+  &:focus {
+    outline: none;
+    border-color: var(--header-color);
+  }
 }
 
 .subscribe-form-button {
